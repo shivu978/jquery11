@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>button click text toggle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <script>
+
+           $(document).ready(function()
+           {
+              $("#btn").click(function()
+              {
+                $("#demo").hide("slow");
+              })
+           });
+
+           $(document).ready(function()
+           {
+              $("#btn1").click(function()
+              {
+                $("#demo").show("slow");
+              })
+           });
+
+           $(document).ready(function()
+           {
+              $("#btn2").click(function()
+              {
+                $("#demo").toggle("slow");
+              })
+           });
+
+
+
+        </script>
+</head>
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis expedita aspernatur porro eveniet omnis iusto soluta vero. Repellendus, voluptatum aliquid aliquam fuga eum harum, voluptas, ad consectetur quae itaque nihil Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint assumenda ab ut eum quae, eveniet nesciunt voluptas natus praesentium, modi voluptatum exercitationem nisi quo reprehenderit necessitatibus esse doloremque sit. Id.</p>
+    
+          <button type="button" id="btn" >click for hide</button>
+    
+          <button type="button" id="btn1" >click for show</button>
+    
+          <button type="button" id="btn2" >click for toggle</button>
+</body>
+</html>

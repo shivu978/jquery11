@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>button click text toggle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <script>
+
+        $(document).ready(function()
+           {
+              $("#btn").click(function()
+              {
+                $(".add-toggler").toggle("slow");
+              })
+           })
+ </script>
+
+ <style>
+
+    body
+    {
+        background-color: silver;
+        margin: 0;
+        padding: 0;
+
+    }
+    .add-toggler
+    {
+        width: 20%;
+        height: 615px;
+        position: absolute;
+        background-color:cadetblue;
+         color:white;
+         z-index: 5 !important;
+         display: none;
+    }
+
+    .btn-toggler
+    {
+        width: 35%;
+        height: auto;
+        padding: 10px;
+        position: absolute;
+    }
+    
+    .btn-toggler,. fa-bars
+    {
+       font-size: 45px;
+       margin-left: 7%;
+    }
+    
+     .navbar-link
+     {
+        margin-top: 35%;
+     }
+
+    .navbar-link li
+    {
+        display: block;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 5px 15px;
+    }
+    
+    .navbar-link a
+
+    {
+        font-size: 20px;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+    }
+ </style>
+</head>
+<body>
+
+    <div class="btn-toggler" id="btn">
+        <span class="fa fa-bars"></span>
+        </div>
+        
+   <section class="add-toggler">
+       <div class="navbar-toggler" >
+        <ul class="navbar-link">
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Electronic Item</a></li>
+            <li><a href="#">Kids Ware</a></li>
+            <li><a href="#">Woman Ware</a></li>
+            <li><a href="#">Man Ware</a></li>
+            <li><a href="#">Mobile Items</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Content</a></li>
+            <li><a href="#">Feedback</a></li>
+            
+
+            
+        </ul>
+
+      </div>
+   </section>
+</body>
+</html>
